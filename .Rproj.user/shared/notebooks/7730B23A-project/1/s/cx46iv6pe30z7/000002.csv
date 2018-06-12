@@ -1,0 +1,4 @@
+"0","```r
+boxplot(Customer~FreqOpted,data=data, main=\"Frequently Opted Store\", 
+        xlab=\"Online Store\", ylab=\"No of Customer\")
+```"

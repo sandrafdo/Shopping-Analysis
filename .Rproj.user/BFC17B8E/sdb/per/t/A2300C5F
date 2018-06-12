@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(shinythemes)\nlibrary(datasets)\nlibrary(rsconnect)\nInputData<-read.csv(\"D:/Analysis.csv\")\n# Use a fluid Bootstrap layout\nfluidPage(    \n  theme = shinytheme(\"slate\"),\n  \n  # Give the page a title\n  titlePanel(\"ONLINE SHOPPING ANALYSIS\"),\n  \n  # Generate a row with a sidebar\n  sidebarLayout(      \n    \n    # Define the sidebar with one input\n    sidebarPanel(\n      selectInput(\"category\", \"Select Category\", \n                  choices=colnames(InputData)),\n      \n      \n      hr(),\n      helpText(\"Data\")\n      \n    ),\n    \n    # Create a spot for the barplot\n    mainPanel(\n      plotOutput(\"storePlot\")  \n    )\n    \n  )\n)\n",
+    "created" : 1505659664715.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2449754052",
+    "id" : "A2300C5F",
+    "lastKnownWriteTime" : 1512571690,
+    "last_content_update" : 1512571946849,
+    "path" : "D:/Shopping Analysis/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

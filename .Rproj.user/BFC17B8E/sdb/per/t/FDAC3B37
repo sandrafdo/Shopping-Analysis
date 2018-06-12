@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "library(datasets)\nlibrary(ggplot2)\nlibrary(rsconnect)\nInputData<-read.csv(\"D:/Analysis.csv\")\n\n# Define a server deployApp()for the Shiny app\nfunction(input, output) {\n  \n  # Fill in the spot we created for a plot\n  output$storePlot <- renderPlot({\n    \n    \n    # Render a barplot\n    ggplot(InputData, aes_string(x=input$category)) +\n      geom_bar(width=0.5,colour=\"red\")+theme(axis.title.x = element_text(angle=70,vjust=0.5,color=\"red\"))+theme_bw()\n    \n  })\n}\n\n",
+    "created" : 1505659665210.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2980891487",
+    "id" : "FDAC3B37",
+    "lastKnownWriteTime" : 1512652418,
+    "last_content_update" : 1512652418191,
+    "path" : "D:/Shopping Analysis/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

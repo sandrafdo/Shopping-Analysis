@@ -1,0 +1,19 @@
+"0","```r
+data<-read_csv(\"D:/Analysis.csv\")
+```"
+"1","Parsed with column specification:
+cols(
+  .default = col_character(),
+  Reviews = col_integer(),
+  Ratings = col_integer(),
+  Satisfaction = col_integer(),
+  ReturnPolicy = col_integer(),
+  Customer = col_integer()
+)
+See spec(...) for full column specifications.
+"
+"0","```r
+library(ggplot2)
+ggplot(data,aes(x = OnlineRetailer,y = Customer)) + 
+  geom_point(size=2.5,color=\"navy\")+xlab(\"OnlineRetailer\")+ylab(\"No of Customer\")+ggtitle(\"Customer vs Online Retailer\")+theme_bw()
+```"
